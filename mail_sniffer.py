@@ -8,8 +8,10 @@ def packet_callback(packet):
             print(f"[*] {str(packet[TCP].payload)}")
 
 
+
 def main():
     sniffer(filter= 'trcp port 110 or tcp port 25 or tcp port 143', prn = packet_callback, store = 0)
+
 
 
 if __name__ == "__main__":

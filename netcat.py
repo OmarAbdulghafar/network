@@ -6,6 +6,7 @@ import sys
 import textwrap
 import threading
 
+
 class Netcat:
     def __init__(self, args, buffer = None):
         self.args = args

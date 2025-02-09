@@ -4,6 +4,7 @@ import ipaddress
 import struct
 import sys
 
+
 class IP:
     def __init__(self, buff= None):
         header = struct.unpack('<BBHHHBBH4s4s', buff)
